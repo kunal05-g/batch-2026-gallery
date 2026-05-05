@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Batch 2026</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batch of 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- Splash Screen -->
-  <section id="splash">
-    <h1>Batch of 2026</h1>
-    <button id="enterBtn">Enter</button>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- SPLASH -->
+<div id="splash">
+  <div class="splash-grain"></div>
+  <div class="splash-gradient"></div>
+  <div class="splash-lines"></div>
+  <div class="splash-content">
+    <p class="splash-eyebrow">A Memoir in Photographs</p>
+    <h1 class="splash-title">Batch of <em>2026</em></h1>
+    <p class="splash-sub">13 stories · One journey</p>
+    <div class="splash-divider"></div>
+    <button class="btn-enter" id="enterBtn"><span>Enter</span></button>
+  </div>
+  <span class="splash-year-left">Est. 2026</span>
+  <span class="splash-year-right">Memories</span>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <nav>
+    <div class="nav-logo">Batch of 2026</div>
+    <ul class="nav-links">
+      <li><a href="#people">People</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#finale">Finale</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="slides"></div>
+    <div class="hero-progress">
+      <div class="hero-progress-bar" id="progressBar"></div>
+    </div>
+    <div class="hero-controls">
+      <button class="hero-btn" id="prevBtn">&#8592;</button>
+      <button class="hero-btn" id="nextBtn">&#8594;</button>
+    </div>
+    <div class="slide-counter" id="slideCounter">01 / 13</div>
   </section>
 
-  <!-- Main Content -->
-  <main id="mainContent">
+  <!-- STORIES -->
+  <div class="section-label" id="people"><span>The Thirteen</span></div>
+  <div id="stories"></div>
 
-    <!-- Hero Slider -->
-    <section class="hero">
-      <div class="slider">
-        <img src="images/person1.jpg" class="slide active"/>
-        <img src="images/person2.jpg" class="slide"/>
-        <img src="images/person3.jpg" class="slide"/>
-      </div>
-    </section>
+  <!-- GALLERY -->
+  <div class="section-label" id="gallery"><span>Memories</span></div>
+  <section id="gallerySection">
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
 
-    <!-- Story Section -->
-    <section class="story">
-      <div class="block">
-        <img src="images/person1.jpg"/>
-        <div>
-          <h2>Name</h2>
-          <p>Memory / quote goes here</p>
-        </div>
-      </div>
-    </section>
+  <!-- FINALE -->
+  <section id="finale">
+    <div class="finale-bg" id="finaleBg"></div>
+    <div class="finale-overlay"></div>
+    <div class="finale-content reveal">
+      <p class="finale-eyebrow">2026</p>
+      <h2 class="finale-title">Not the end.<br><em>Just the beginning.</em></h2>
+      <p class="finale-sub">Always remember where you started</p>
+    </div>
+    <div class="finale-year">2026</div>
+  </section>
 
-  </main>
+  <footer>
+    <p>Batch of 2026 · A Class to Remember</p>
+    <p>Made with love · 2026</p>
+  </footer>
 
-  <script src="script.js"></script>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <button class="modal-close" id="modalClose">&#10005;</button>
+  <img src="" alt="" id="modalImg">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
