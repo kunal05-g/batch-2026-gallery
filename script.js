@@ -1,66 +1,171 @@
 // ===== DATA =====
+// ===== HERO DATA =====
+const heroImages = [
+  "images/hero/hero1.jpeg",
+  "images/hero/hero2.jpeg",
+  "images/hero/hero3.jpeg",
+  "images/hero/hero4.jpeg",
+  "images/hero/hero5.jpeg",
+  "images/hero/hero6.jpeg",
+  "images/hero/hero7.jpeg",
+  "images/hero/hero8.jpeg",
+  "images/hero/hero9.jpeg",
+  "images/hero/hero10.jpeg",
+  "images/hero/hero11.jpeg",
+  "images/hero/hero12.jpeg",
+  "images/hero/hero13.jpeg",
+  "images/hero/hero14.jpeg",
+  "images/hero/hero15.jpeg"
+];
+
 const people = [
-  { name: "Arjun", last: "Mehta", tagline: "The one who never stopped asking why", quote: "Every question I asked in that classroom felt like opening a window. I am leaving with a sky full of answers.", role: "The Philosopher" },
-  { name: "Priya", last: "Sharma", tagline: "Grace in every corridor she walked", quote: "They say college changes you. It didn't change me — it revealed me.", role: "The Storyteller" },
-  { name: "Rohan", last: "Kapoor", tagline: "Built things before he understood them", quote: "We broke things to understand them better. Now I understand them better than anything.", role: "The Builder" },
-  { name: "Ananya", last: "Gupta", tagline: "Quiet voice, the loudest conviction", quote: "I chose silence carefully. And I chose my words even more carefully.", role: "The Visionary" },
-  { name: "Karan", last: "Patel", tagline: "Laughter in the hardest lectures", quote: "If you can laugh through the storm, you've already survived it.", role: "The Anchor" },
-  { name: "Sneha", last: "Verma", tagline: "Heart as wide as her ambitions", quote: "Every late night, every doubt — I would do it all again. A thousand times.", role: "The Heart" },
-  { name: "Aditya", last: "Nair", tagline: "Led when nobody asked him to", quote: "Leadership isn't a role. It's what you do when nobody is watching.", role: "The Leader" },
-  { name: "Ishaan", last: "Singh", tagline: "Found poetry in every data set", quote: "Numbers don't lie, but they don't tell the whole truth either. I learned to read between the lines.", role: "The Analyst" },
-  { name: "Meera", last: "Joshi", tagline: "Turned every setback into a canvas", quote: "Art taught me that mistakes are just brush strokes in the wrong direction — and that's fine.", role: "The Artist" },
-  { name: "Rahul", last: "Das", tagline: "Always the last one to leave the library", quote: "Knowledge doesn't expire. Every page I turned is still turning somewhere inside me.", role: "The Scholar" },
-  { name: "Kavya", last: "Reddy", tagline: "Bridged every gap in the room", quote: "In a room full of strangers, I chose to see family. That made all the difference.", role: "The Bridge" },
-  { name: "Dev", last: "Malhotra", tagline: "Code was his second language", quote: "I came here to learn algorithms. I left knowing that the best ones are human.", role: "The Engineer" },
-  { name: "Nisha", last: "Iyer", tagline: "Carried dreams heavier than her backpack", quote: "There were days I wanted to stop. I am glad I never listened to those days.", role: "The Dreamer" }
+  {
+    name: "Aishwarya",
+    last: "",
+    img: "images/aishwarya.jpeg",
+    tagline: "The one who never stopped asking why",
+    quote: "Every question I asked in that classroom felt like opening a window. I am leaving with a sky full of answers.",
+    role: "The Philosopher"
+  },
+  {
+    name: "Ashwini",
+    last: "Thakur",
+    img: "images/ashwini.jpeg",
+    tagline: "Grace in every corridor she walked",
+    quote: "They say college changes you. It didn't change me — it revealed me.",
+    role: "The Storyteller"
+  },
+  {
+    name: "Deepa",
+    last: "",
+    img: "images/deepa.jpeg",
+    tagline: "Built things before she understood them",
+    quote: "We broke things to understand them better.",
+    role: "The Builder"
+  },
+  {
+    name: "Deepika",
+    last: "",
+    img: "images/deepika.jpeg",
+    tagline: "Quiet voice, the loudest conviction",
+    quote: "I chose silence carefully.",
+    role: "The Visionary"
+  },
+  {
+    name: "Gagan",
+    last: "",
+    img: "images/gagan.jpeg",
+    tagline: "Laughter in the hardest lectures",
+    quote: "If you can laugh through the storm, you've already survived it.",
+    role: "The Anchor"
+  },
+  {
+    name: "Himanshu",
+    last: "",
+    img: "images/himanshu.jpeg",
+    tagline: "Heart as wide as ambition",
+    quote: "Every late night was worth it.",
+    role: "The Heart"
+  },
+  {
+    name: "Honey",
+    last: "",
+    img: "images/honey.jpeg",
+    tagline: "Led when nobody asked",
+    quote: "Leadership is what you do unseen.",
+    role: "The Leader"
+  },
+  {
+    name: "Muskan",
+    last: "",
+    img: "images/muskan.jpeg",
+    tagline: "Poetry in eyes",
+    quote: "I learned to read between the lines.",
+    role: "The Analyst"
+  },
+  {
+    name: "Nikita",
+    last: "Sharma",
+    img: "images/nikita.jpeg",
+    tagline: "Turned setbacks into art",
+    quote: "Mistakes are just brush strokes.",
+    role: "The Artist"
+  },
+  {
+    name: "Priya",
+    last: "",
+    img: "images/priya.jpeg",
+    tagline: "Always learning",
+    quote: "Every page still lives in me.",
+    role: "The Scholar"
+  },
+  {
+    name: "Raj",
+    last: "Meena",
+    img: "images/raj.jpeg",
+    tagline: "Connected everyone",
+    quote: "I chose to see family.",
+    role: "The Bridge"
+  },
+  {
+    name: "Pankaj",
+    last: "Kumar Yadav",
+    img: "images/pankaj.jpeg",
+    tagline: "Kindness was his language",
+    quote: "Being kind and respectful is worth it.",
+    role: "The Engineer"
+  },
+  {
+    name: "Rohit",
+    last: "",
+    img: "images/rohit.jpeg",
+    tagline: "Carried dreams",
+    quote: "I never gave up.",
+    role: "The Dreamer"
+  },
+  {
+  name: "Ashwini",
+  last: "",
+  img: "images/ashwini2.jpeg",
+  tagline: "He turned ordinary days into stories",
+  quote: "Some moments fade, but the way they made us feel stays forever. I’m taking those feelings with me.",
+  role: "The Memory Keeper"
+},
+  {
+  name: "Kamal",
+  last: "",
+  img: "images/kamal.jpeg",
+  tagline: "Calm mind, unstoppable focus",
+  quote: "I didn’t rush the process — I trusted it. Every step shaped who I am becoming.",
+  role: "The Strategist"
+},
 ];
  
 // Curated Unsplash photos — portraits (faces not shown, artistic)
-const portraits = [
-  "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900&q=80",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&q=80",
-  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=900&q=80",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80",
-  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80",
-  "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=900&q=80",
-  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=900&q=80",
-  "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=900&q=80",
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=900&q=80",
-  "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&q=80",
-  "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=900&q=80"
-];
+
  
-const galleryPhotos = [
-  { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80", h: 280 },
-  { src: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80", h: 400 },
-  { src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80", h: 320 },
-  { src: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80", h: 360 },
-  { src: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&q=80", h: 260 },
-  { src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80", h: 420 },
-  { src: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600&q=80", h: 300 },
-  { src: "https://images.unsplash.com/photo-1601987077677-5346c463ae93?w=600&q=80", h: 380 },
-  { src: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80", h: 340 },
-  { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80", h: 290 },
-  { src: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&q=80", h: 440 },
-  { src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80", h: 320 }
-];
- 
+const galleryPhotos = Array.from({ length: 30 }, (_, i) => ({
+  src: `images/gallery/gallery${i + 1}.jpeg`,
+  h: Math.floor(Math.random() * 150) + 250 // random height for aesthetic
+}));
+
 // ===== BUILD HERO SLIDES =====
 const slidesEl = document.getElementById('slides');
-people.forEach((p, i) => {
+
+heroImages.forEach((img, i) => {
   const div = document.createElement('div');
   div.className = 'slide' + (i === 0 ? ' active' : '');
+
   div.innerHTML = `
-    <img class="slide-img" src="${portraits[i]}" alt="${p.name}" loading="${i < 2 ? 'eager' : 'lazy'}">
+    <img class="slide-img" src="${img}" alt="Memory ${i + 1}" loading="${i < 2 ? 'eager' : 'lazy'}">
     <div class="slide-overlay"></div>
     <div class="slide-content">
-      <div class="slide-number">${String(i+1).padStart(2,'0')} of 13</div>
-      <h2 class="slide-name">${p.name} <em>${p.last}</em></h2>
-      <p class="slide-tagline">${p.tagline}</p>
+      <div class="slide-number">${String(i + 1).padStart(2, '0')} of ${heroImages.length}</div>
+      <h2 class="slide-name">Batch of <em>2026</em></h2>
+      <p class="slide-tagline">Moments that defined us</p>
     </div>
   `;
+
   slidesEl.appendChild(div);
 });
  
@@ -73,25 +178,42 @@ let autoTimer, progressTimer;
  
 function showSlide(idx) {
   slides[current].classList.remove('active');
+
   current = (idx + slides.length) % slides.length;
+
   slides[current].classList.add('active');
-  counter.textContent = String(current+1).padStart(2,'0') + ' / 13';
+
+  counter.textContent =
+    String(current + 1).padStart(2, '0') + ' / ' + slides.length;
+
   resetProgress();
 }
  
 function resetProgress() {
   progressBar.style.transition = 'none';
   progressBar.style.width = '0%';
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    progressBar.style.transition = 'width 5s linear';
-    progressBar.style.width = '100%';
-  }));
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      progressBar.style.transition = 'width 5s linear';
+      progressBar.style.width = '100%';
+    });
+  });
+
   clearTimeout(autoTimer);
   autoTimer = setTimeout(() => showSlide(current + 1), 5000);
 }
- 
-document.getElementById('nextBtn').addEventListener('click', () => showSlide(current + 1));
-document.getElementById('prevBtn').addEventListener('click', () => showSlide(current - 1));
+
+// Controls
+document.getElementById('nextBtn').addEventListener('click', () => {
+  showSlide(current + 1);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  showSlide(current - 1);
+});
+
+// Init
 resetProgress();
  
 // ===== BUILD STORIES =====
@@ -102,12 +224,12 @@ people.forEach((p, i) => {
   div.className = 'story' + (rev ? ' reverse' : '');
   div.innerHTML = `
     <div class="story-image">
-      <img src="${portraits[i]}" alt="${p.name}" loading="lazy">
+      <img src="${p.img}" alt="${p.name}" loading="lazy">
       <div class="story-image-overlay"></div>
     </div>
     <div class="story-body">
       <span class="story-index">${String(i+1).padStart(2,'0')}</span>
-      <p class="story-num reveal reveal-delay-1">${String(i+1).padStart(2,'0')} / 13 &nbsp;·&nbsp; ${p.role}</p>
+      <p class="story-num reveal reveal-delay-1">${String(i+1).padStart(2,'0')} / 15 &nbsp;·&nbsp; ${p.role}</p>
       <h3 class="story-name reveal reveal-delay-2">${p.name} <em>${p.last}</em></h3>
       <p class="story-role reveal reveal-delay-2">${p.tagline}</p>
       <blockquote class="story-quote reveal reveal-delay-3">${p.quote}</blockquote>
@@ -133,19 +255,32 @@ galleryPhotos.forEach(ph => {
 });
  
 // ===== BUILD FINALE BG =====
-const finaleBg = document.getElementById('finaleBg');
-[portraits[0], portraits[6], portraits[12]].forEach((src, i) => {
-  const div = document.createElement('div');
-  div.className = 'finale-slide' + (i === 0 ? ' active' : '');
-  div.innerHTML = `<img src="${src}" alt="" loading="lazy">`;
+// ===== FINALE BACKGROUND SLIDER =====
+const finaleBg = document.getElementById("finaleBg");
+
+// pick some students for background rotation
+const finaleImages = [
+  people[0].img,
+  people[3].img,
+  people[7].img,
+  people[9].img,
+  people[12].img
+];
+
+finaleImages.forEach((src, i) => {
+  const div = document.createElement("div");
+  div.className = "finale-slide" + (i === 0 ? " active" : "");
+  div.innerHTML = `<img src="${src}" loading="lazy">`;
   finaleBg.appendChild(div);
 });
-let finaleIdx = 0;
-const finaleSlides = document.querySelectorAll('.finale-slide');
+
+const finaleSlides = document.querySelectorAll(".finale-slide");
+let finaleIndex = 0;
+
 setInterval(() => {
-  finaleSlides[finaleIdx].classList.remove('active');
-  finaleIdx = (finaleIdx + 1) % finaleSlides.length;
-  finaleSlides[finaleIdx].classList.add('active');
+  finaleSlides[finaleIndex].classList.remove("active");
+  finaleIndex = (finaleIndex + 1) % finaleSlides.length;
+  finaleSlides[finaleIndex].classList.add("active");
 }, 4000);
  
 // ===== MODAL =====
@@ -195,3 +330,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+// ===== TYPEWRITER EFFECT =====
+const text = "Not the end.\nJust the beginning.";
+const el = document.getElementById("typewriter");
+
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    if (text[i] === "\n") {
+      el.innerHTML += "<br>";
+    } else {
+      el.innerHTML += text[i];
+    }
+    i++;
+    setTimeout(typeWriter, 60);
+  }
+}
+
+setTimeout(typeWriter, 800); // slight delay after load
